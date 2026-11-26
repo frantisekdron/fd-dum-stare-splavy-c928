@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Dům u Máchova jezera · Staré Splavy | Gepard Reality</title>
+<meta name="description" content="Rodinný dům 330 m² se zahradou 1 558 m², pět minut pěšky od Máchova jezera. Bydlet se dá hned, k podkroví je projekt na dva byty. Video, fotky, vizualizace a okolí.">
+<meta property="og:title" content="Dům u Máchova jezera · Staré Splavy">
+<meta property="og:description" content="330 m², zahrada 1 558 m², 5 minut pěšky k jezeru. Video, fotky a vizualizace.">
+<meta property="og:image" content="img/poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#8DC63F;--green-d:#6FA42A;--graph:#1E2124;--ink:#1E2124;--muted:#5F6366;--paper:#F4F5EF;--line:#E1E3DA;--white:#fff;--r:14px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Nunito Sans",system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Nunito,system-ui,sans-serif;font-weight:800;line-height:1.12;margin:0;text-wrap:balance}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem)}
+h3{font-size:1.2rem}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.kick{font-family:Nunito,sans-serif;font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green-d)}
+section{padding:clamp(56px,8vw,96px) 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:12px;font-weight:700;text-decoration:none;font-size:1rem;border:2px solid var(--green);transition:transform .15s,background .15s}
+.btn-p{background:var(--green);color:var(--graph)}
+.btn-p:hover{background:#9bd14d;transform:translateY(-1px)}
+.btn-o{color:var(--white);border-color:rgba(255,255,255,.7)}
+.btn-o:hover{border-color:var(--green)}
+/* hlavička */
+.top{position:fixed;inset:0 0 auto;z-index:20;transition:background .25s,box-shadow .25s}
+.top.solid{background:rgba(30,33,36,.94);backdrop-filter:blur(8px);box-shadow:0 2px 18px rgba(0,0,0,.18)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.logo b{font-family:Nunito,sans-serif;font-weight:800;color:var(--green);border:3px solid var(--green);border-radius:10px;padding:1px 12px 3px;font-size:1.35rem;letter-spacing:.01em}
+.logo small{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#C9CCCF;line-height:1.3}
+.nav{display:flex;gap:22px;align-items:center}
+.nav a{color:#E8EAEC;text-decoration:none;font-weight:600;font-size:.95rem}
+.nav a:hover{color:var(--green)}
+.nav .btn{padding:9px 18px;font-size:.92rem}
+@media (max-width:860px){.nav a:not(.btn){display:none}}
+@media (max-width:760px){.logo small,.nav .btn{display:none}.top .wrap{height:62px}}
+/* hero */
+.hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;color:#fff;background:#1E2124 url(img/jezero_0034.jpg) center 40%/cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,24,.55) 0%,rgba(20,22,24,.05) 35%,rgba(20,22,24,.78) 100%)}
+.hero .wrap{position:relative;z-index:1;padding:140px 0 64px}
+.hero .kick{color:var(--green)}
+.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);max-width:15ch;margin:12px 0 18px}
+.hero p{font-size:clamp(1.05rem,1.8vw,1.3rem);max-width:46ch;margin:0 0 30px;color:#EEF0F1}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+/* fakta */
+.facts{background:var(--graph);color:#fff;padding:0}
+.facts .wrap{display:grid;grid-template-columns:repeat(5,1fr)}
+.fact{padding:28px 18px;border-left:1px solid rgba(255,255,255,.1)}
+.fact:first-child{border-left:0}
+.fact b{display:block;font-family:Nunito,sans-serif;font-size:clamp(1.4rem,2.6vw,2rem);color:var(--green);line-height:1.1}
+.fact span{font-size:.9rem;color:#C9CCCF}
+@media (max-width:860px){.facts .wrap{grid-template-columns:repeat(2,1fr)}.fact{border-left:0;border-top:1px solid rgba(255,255,255,.1)}}
+/* video */
+.video{background:var(--paper)}
+.video .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.video video{width:100%;aspect-ratio:16/9;border-radius:var(--r);background:#000;box-shadow:0 18px 50px rgba(30,33,36,.18)}
+.video .note{color:var(--muted);font-size:.92rem;margin-top:12px}
+/* popis */
+.popis .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,70px);align-items:start}
+.popis p{margin:0 0 16px}
+.popis .lead{font-size:1.2rem;font-weight:600}
+.box{background:var(--paper);border-radius:var(--r);padding:26px 28px}
+.box h3{margin-bottom:12px}
+.box ul{margin:0;padding:0;list-style:none}
+.box li{padding:9px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px}
+.box li:first-child{border-top:0}
+.box li span:last-child{font-weight:700;text-align:right}
+@media (max-width:860px){.popis .grid{grid-template-columns:1fr}}
+/* fotky */
+.foto{background:var(--paper)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
+.gal a{position:relative;overflow:hidden;border-radius:10px;aspect-ratio:3/2;display:block}
+.gal a:nth-child(1){grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gal a:hover img{transform:scale(1.04)}
+.tag{position:absolute;top:10px;right:10px;font-size:.66rem;letter-spacing:.12em;font-weight:800;text-transform:uppercase;color:#fff;background:rgba(20,22,24,.62);border:1.5px solid var(--green);border-radius:7px;padding:3px 8px}
+.tag.st{border-color:#E8E8E3}
+@media (max-width:760px){.gal{grid-template-columns:1fr 1fr}.gal a:nth-child(1){grid-column:span 2;grid-row:auto;aspect-ratio:3/2}}
+/* vizualizace */
+.pairs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:28px}
+.pair p{margin:10px 2px 0;font-weight:600}
+.ba{position:relative;aspect-ratio:3/2;border-radius:12px;overflow:hidden;user-select:none;touch-action:pan-y;background:#ddd}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .after{clip-path:inset(0 0 0 var(--x,50%))}
+.ba .bar{position:absolute;top:0;bottom:0;left:var(--x,50%);width:3px;background:#fff;transform:translateX(-50%);box-shadow:0 0 8px rgba(0,0,0,.35)}
+.ba .bar::after{content:"‹ ›";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:var(--green);color:var(--graph);display:grid;place-items:center;font-weight:800;font-size:1.1rem}
+.ba .l{position:absolute;bottom:10px;font-size:.66rem;letter-spacing:.12em;font-weight:800;text-transform:uppercase;color:#fff;background:rgba(20,22,24,.62);border-radius:7px;padding:3px 8px}
+.ba .l.a{left:10px}.ba .l.b{right:10px;border:1.5px solid var(--green)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.disc{margin-top:22px;color:var(--muted);font-size:.9rem}
+@media (max-width:760px){.pairs{grid-template-columns:1fr}}
+/* okolí */
+.okoli{background:var(--graph);color:#fff}
+.okoli .kick{color:var(--green)}
+.okoli .grid{display:grid;grid-template-columns:1.35fr .65fr;gap:34px;margin-top:28px;align-items:center}
+.okoli img{border-radius:var(--r)}
+.dist{list-style:none;margin:0;padding:0}
+.dist li{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-top:1px solid rgba(255,255,255,.12)}
+.dist li:first-child{border-top:0}
+.dist b{color:var(--green);font-family:Nunito,sans-serif;white-space:nowrap}
+.map{margin-top:34px;border-radius:var(--r);overflow:hidden;aspect-ratio:21/8;background:#2a2d30}
+.map iframe{width:100%;height:100%;border:0;filter:saturate(.9)}
+.okoli .small{color:#AEB2B5;font-size:.82rem;margin-top:10px}
+@media (max-width:860px){.okoli .grid{grid-template-columns:1fr}.map{aspect-ratio:4/3}}
+/* kontakt */
+.kontakt .card{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;background:var(--paper);border-radius:20px;padding:clamp(28px,5vw,52px);border:2px solid var(--green)}
+.kontakt h2{margin:8px 0 10px}
+.kontakt .who{font-size:1.15rem;font-weight:700}
+.kontakt .who span{display:block;font-weight:400;color:var(--muted);font-size:1rem}
+.kontakt .acts{display:flex;flex-direction:column;gap:12px;min-width:min(320px,100%)}
+.kontakt .btn-o{color:var(--graph);border-color:var(--graph)}
+.kontakt .btn-o:hover{border-color:var(--green)}
+@media (max-width:760px){.kontakt .card{grid-template-columns:1fr}}
+footer{background:var(--graph);color:#AEB2B5;font-size:.88rem;padding:34px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer b{color:#fff}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(15,16,18,.94);display:none;align-items:center;justify-content:center;padding:24px}
+.lb.on{display:flex}
+.lb img{max-height:88vh;max-width:min(1500px,94vw);border-radius:8px}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer;padding:12px 18px;font-family:Nunito,sans-serif}
+.lb .x{top:10px;right:14px}.lb .p{left:8px;top:50%;transform:translateY(-50%)}.lb .n{right:8px;top:50%;transform:translateY(-50%)}
+.mcta{display:none}
+@media (max-width:760px){.mcta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}}
+/* souhlas s měřením (vzor pozemekpitkovice.cz) */
+.mb[hidden]{display:none}
+.mb{position:fixed;z-index:90;right:20px;bottom:20px;width:min(500px,calc(100% - 32px));padding:18px 22px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 8px 40px rgba(0,0,0,.18);font-size:15px;line-height:1.45}
+.mb p{margin:0 0 12px}.ma{display:flex;gap:10px;flex-wrap:wrap}
+.ma button{font:inherit;font-size:14px;font-weight:700;cursor:pointer;background:#fff;color:var(--ink);border:1px solid #9a9e94;border-radius:9px;padding:9px 15px;min-height:42px}
+.ma button:hover{background:#eceee6}.ma [data-consent="all"]{background:var(--green);border-color:var(--green)}
+.ma [data-privacy]{border-color:transparent;background:transparent}
+.pd{width:min(640px,calc(100% - 32px));max-height:85svh;overflow:auto;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:26px;font-size:16px;line-height:1.55}
+.pd::backdrop{background:rgba(15,16,18,.6)}.pd header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
+.pd h2{font-size:1.6rem}.pd h3{font-size:1.05rem;margin:20px 0 6px}.pd p{margin:8px 0}.pd header button{font:inherit;cursor:pointer;background:none;border:0;color:inherit;padding:8px}
+.pc{display:grid;grid-template-columns:24px 1fr;gap:10px;padding:14px 0;border-top:1px solid var(--line);align-items:start}.pc input{width:20px;height:20px;accent-color:var(--green-d);margin-top:3px}.pc small{display:block;font-size:14px;margin-top:4px}
+.pd .ma{margin-top:16px}.pl{font:inherit;color:inherit;cursor:pointer;border:0;background:none;padding:0;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:760px){.mb{right:16px;bottom:76px;padding:14px 16px;font-size:14px}.ma button{font-size:13px;padding:8px 12px}.pd{padding:20px}}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#"><b>gepard</b><small>Realitní specialista<br>Absoluta Real</small></a>
+    <nav class="nav">
+      <a href="#video">Video</a><a href="#fotky">Fotky</a><a href="#vizualizace">Vizualizace</a><a href="#podkrovi">Podkroví</a><a href="#okoli">Okolí</a>
+      <a class="btn btn-p" href="#kontakt">Domluvit prohlídku</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kick">Na prodej · Staré Splavy</span>
+    <h1>Dům pět minut pěšky od Máchova jezera</h1>
+    <p>Rodinný dům 330 m² se zahradou 1 558 m². Bydlet se dá hned a k podkroví je projekt na dva samostatné byty.</p>
+    <div class="cta"><a class="btn btn-p" href="#kontakt">Domluvit prohlídku</a><a class="btn btn-o" href="#video">▶ Pustit video</a></div>
+  </div>
+</section>
+
+<section class="facts" aria-label="Hlavní údaje">
+  <div class="wrap">
+    <div class="fact"><b>330 m²</b><span>užitná plocha</span></div>
+    <div class="fact"><b>1 558 m²</b><span>pozemek se zahradou</span></div>
+    <div class="fact"><b>5 min</b><span>pěšky k jezeru (370 m)</span></div>
+    <div class="fact"><b>Hned</b><span>přízemí k bydlení</span></div>
+    <div class="fact"><b>2 byty</b><span>projekt v podkroví</span></div>
+  </div>
+</section>
+
+<section class="video" id="video">
+  <div class="wrap">
+    <div class="head"><div><span class="kick">Video</span><h2>Dům, zahrada a okolí za minutu dvacet</h2></div></div>
+    <video controls playsinline preload="metadata" poster="img/poster.jpg" src="video/dum_stare_splavy.mp4"></video>
+    <p class="note">Záběry interiéru a podkroví po rekonstrukci jsou vizualizace a ve videu jsou tak označené.</p>
+  </div>
+</section>
+
+<section class="popis" id="popis">
+  <div class="wrap grid">
+    <div>
+      <span class="kick">O domě</span>
+      <h2 style="margin:10px 0 22px">Velký dům v klidné ulici, kousek od vody</h2>
+      <p class="lead">Dům ve Starých Splavech stojí pět minut chůze od břehu Máchova jezera. Na vlak dojdete za dvanáct minut, na pláž ve Starých Splavech za devatenáct.</p>
+      <p>Bydlet se tu dá hned. V přízemí je byt se třemi pokoji, kuchyní a koupelnou s rohovou vanou. V podkroví jsou další dva pokoje s kuchyní, koupelnou a terasou. Zbytek domu je připravený na dokončení: dvě velké místnosti v podkroví a rozestavěné prostory v přízemí. Hodí se pro velkou rodinu, vícegenerační bydlení nebo bydlení s pronájmem části domu.</p>
+      <p>Zahrada má 1 558 m², dřevěný altán, kůlnu na dříví a ovocné stromy: jabloně, třešeň, višeň a ořech.</p>
+      <p>Dům je zděný, částečně podsklepený, s obytným podkrovím a sedlovou střechou z betonových tašek. V polovině 90. let prošel modernizací: nová krytina, okna, podlahy, rozvody vody, odpadů a elektřiny a nové topení. Topí se plynovým kotlem, k tomu jsou dvoje kamna na dřevo.</p>
+      <p>K domu existuje projektová dokumentace přestavby na penzion a půdorys podkroví se dvěma byty 3+1. Makléř vám ji rád pošle.</p>
+    </div>
+    <aside class="box">
+      <h3>Parametry</h3>
+      <ul>
+        <li><span>Užitná plocha</span><span>330 m²</span></li>
+        <li><span>Pozemek</span><span>1 558 m²</span></li>
+        <li><span>Stavba</span><span>zděná, podsklepená část</span></li>
+        <li><span>Topení</span><span>plynový kotel, 2× kamna</span></li>
+        <li><span>Sítě</span><span>elektřina, plyn, vodovod, kanalizace</span></li>
+        <li><span>Zahrada</span><span>altán, kůlna, ovocné stromy</span></li>
+        <li><span>Podkroví</span><span>projekt 2 bytů 3+1</span></li>
+        <li><span>Energetická třída</span><span>G</span></li>
+      </ul>
+      <p style="margin:18px 0 0"><a class="btn btn-p" href="#kontakt" style="width:100%;justify-content:center">Chci prohlídku</a></p>
+      <p style="margin:12px 0 0;font-size:.92rem"><a href="pdf/Pronajem_Stare_Splavy.pdf?v=2" target="_blank" rel="noopener">Přehled možností pronájmu (PDF)</a></p>
+    </aside>
+  </div>
+</section>
+
+<section class="foto" id="fotky">
+  <div class="wrap">
+    <span class="kick">Fotky</span>
+    <h2 style="margin-top:10px">Dům, zahrada a jezero</h2>
+    <div class="gal" id="gal">
+      <a href="img/ulice_k_jezeru_viz.jpg" data-cap="Ulice k jezeru z dronu, dům vpravo dole (letní vizualizace zimní fotky)"><img src="img/ulice_k_jezeru_viz.jpg" alt="Ulice k Máchovu jezeru z dronu" loading="lazy"><span class="tag">Vizualizace</span></a>
+      <a href="img/foto_01.jpg" data-cap="Dům z ulice"><img src="img/foto_01.jpg" alt="Dům z ulice" loading="lazy"></a>
+      <a href="img/foto_03.jpg" data-cap="Zahrada s altánem"><img src="img/foto_03.jpg" alt="Zahrada s altánem" loading="lazy"></a>
+      <a href="img/foto_04.jpg" data-cap="Zadní strana domu s terasou"><img src="img/foto_04.jpg" alt="Zadní strana domu" loading="lazy"></a>
+      <a href="img/foto_05.jpg" data-cap="Zahrada"><img src="img/foto_05.jpg" alt="Zahrada" loading="lazy"></a>
+      <a href="img/foto_06.jpg" data-cap="Pokoj s kamny"><img src="img/foto_06.jpg" alt="Pokoj s kamny" loading="lazy"></a>
+      <a href="img/foto_07.jpg" data-cap="Pokoj"><img src="img/foto_07.jpg" alt="Pokoj" loading="lazy"></a>
+      <a href="img/foto_09.jpg" data-cap="Koupelna s rohovou vanou"><img src="img/foto_09.jpg" alt="Koupelna s vanou" loading="lazy"></a>
+      <a href="img/foto_10.jpg" data-cap="Koupelna se sprchovým koutem"><img src="img/foto_10.jpg" alt="Koupelna se sprchou" loading="lazy"></a>
+      <a href="img/plaz_0129.jpg" data-cap="Pláž Staré Splavy, 19 minut pěšky"><img src="img/plaz_0129.jpg" alt="Pláž Staré Splavy" loading="lazy"></a>
+      <a href="img/jezero_0034.jpg" data-cap="Máchovo jezero a Doksy"><img src="img/jezero_0034.jpg" alt="Máchovo jezero" loading="lazy"></a>
+      <a href="img/bezdez_0094.jpg" data-cap="Hrad Bezděz, 13 minut autem"><img src="img/bezdez_0094.jpg" alt="Hrad Bezděz" loading="lazy"></a>
+      <a href="img/viz_po_podkrovi.jpg" data-cap="Podkroví jako hotový byt (vizualizace)"><img src="img/viz_po_podkrovi.jpg" alt="Vizualizace podkroví" loading="lazy"><span class="tag">Vizualizace</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="vizualizace">
+  <div class="wrap">
+    <span class="kick">Vizualizace</span>
+    <h2 style="margin-top:10px">Jak může dům vypadat</h2>
+    <p style="max-width:62ch;margin:14px 0 0;color:var(--muted)">Posuňte jezdcem: vlevo dnešní stav, vpravo vizualizace. Zdi, okna a dveře zůstávají, mění se povrchy a zařízení.</p>
+    <div class="pairs">
+      <div class="pair"><div class="ba"><img src="img/viz_pred_podkrovi.jpg" alt="Podkroví dnes"><img class="after" src="img/viz_po_podkrovi.jpg" alt="Podkroví jako byt"><span class="l a">Dnes</span><span class="l b">Vizualizace</span><span class="bar"></span><input type="range" min="0" max="100" value="50" aria-label="Porovnání podkroví"></div><p>Podkroví: projekt dvou bytů</p></div>
+      <div class="pair"><div class="ba"><img src="img/viz_pred_kamna.jpg" alt="Pokoj s kamny dnes"><img class="after" src="img/viz_po_kamna.jpg" alt="Pokoj s kamny zařízený"><span class="l a">Dnes</span><span class="l b">Vizualizace</span><span class="bar"></span><input type="range" min="0" max="100" value="50" aria-label="Porovnání pokoje s kamny"></div><p>Obývák s kamny</p></div>
+      <div class="pair"><div class="ba"><img src="img/viz_pred_kuchyn.jpg" alt="Kuchyň dnes"><img class="after" src="img/viz_po_kuchyn.jpg" alt="Nová kuchyň"><span class="l a">Dnes</span><span class="l b">Vizualizace</span><span class="bar"></span><input type="range" min="0" max="100" value="50" aria-label="Porovnání kuchyně"></div><p>Nová kuchyň</p></div>
+      <div class="pair"><div class="ba"><img src="img/viz_pred_loznice.jpg" alt="Pokoj dnes"><img class="after" src="img/viz_po_loznice.jpg" alt="Ložnice"><span class="l a">Dnes</span><span class="l b">Vizualizace</span><span class="bar"></span><input type="range" min="0" max="100" value="50" aria-label="Porovnání ložnice"></div><p>Ložnice</p></div>
+      <div class="pair"><div class="ba"><img src="img/viz_pred_terasa.jpg" alt="Terasa dnes"><img class="after" src="img/viz_po_terasa.jpg" alt="Terasa zařízená"><span class="l a">Dnes</span><span class="l b">Vizualizace</span><span class="bar"></span><input type="range" min="0" max="100" value="50" aria-label="Porovnání terasy"></div><p>Střešní terasa nad zahradou</p></div>
+      <div class="pair"><div class="ba"><img src="img/viz_pred_koupelna.jpg" alt="Koupelna dnes"><img class="after" src="img/viz_po_koupelna.jpg" alt="Koupelna po úpravě"><span class="l a">Dnes</span><span class="l b">Vizualizace</span><span class="bar"></span><input type="range" min="0" max="100" value="50" aria-label="Porovnání koupelny"></div><p>Koupelna s vanou</p></div>
+    </div>
+    <p class="disc">Vizualizace jsou ilustrační a ukazují jednu z možností. Nejsou součástí prodeje.</p>
+  </div>
+</section>
+
+<section id="podkrovi" style="background:var(--paper)">
+  <div class="wrap">
+    <span class="kick">Podkroví</span>
+    <h2 style="margin-top:10px">Projekt dvou bytů 3+1</h2>
+    <p style="max-width:62ch;margin:14px 0 0;color:var(--muted)">Byt A 59,4 m² a byt B 77,0 m², společná chodba a schodiště. Plochy podle projektu přestavby, schéma je orientační.</p>
+    <div class="pudorysy" style="display:grid;gap:22px;margin-top:26px">
+      <a href="img/pudorys_podkrovi.png" target="_blank" rel="noopener"><img src="img/pudorys_podkrovi_web.jpg" alt="Půdorys podkroví: byt A 3+1 59,4 m² a byt B 3+1 77,0 m²" loading="lazy" style="border-radius:var(--r);border:1px solid var(--line)"></a>
+      <a href="img/pudorys_podkrovi_nabytek.png" target="_blank" rel="noopener"><img src="img/pudorys_podkrovi_nabytek_web.jpg" alt="Půdorys podkroví s nábytkem" loading="lazy" style="border-radius:var(--r);border:1px solid var(--line)"></a>
+    </div>
+  </div>
+</section>
+
+<section class="okoli" id="okoli">
+  <div class="wrap">
+    <span class="kick">Okolí</span>
+    <h2 style="margin-top:10px">Všechno je blízko</h2>
+    <div class="grid">
+      <img src="img/mapa_okoli_3d.jpg" alt="3D mapa okolí s časy pěšky a autem" loading="lazy">
+      <ul class="dist">
+        <li><span>Břeh Máchova jezera</span><b>5 min pěšky</b></li>
+        <li><span>Vlaková zastávka Staré Splavy</span><b>12 min pěšky</b></li>
+        <li><span>Pláž Staré Splavy</span><b>19 min pěšky</b></li>
+        <li><span>Doksy, náměstí</span><b>6 min autem</b></li>
+        <li><span>Hrad Bezděz</span><b>13 min autem</b></li>
+        <li><span>Mladá Boleslav</span><b>cca 30 min autem</b></li>
+        <li><span>Praha</span><b>cca 1 h 20 min autem</b></li>
+      </ul>
+    </div>
+    <div class="map"><iframe title="Mapa: Staré Splavy a Máchovo jezero" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=14.585%2C50.565%2C14.690%2C50.612&amp;layer=mapnik"></iframe></div>
+    <p class="small">Časy jsou změřené po cestách (OpenStreetMap). Ortofoto a výškopis © ČÚZK · mapa © přispěvatelé OpenStreetMap.</p>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+  <div class="wrap">
+    <div class="card">
+      <div>
+        <span class="kick">Prohlídka</span>
+        <h2>Domluvte si prohlídku</h2>
+        <p style="margin:0 0 18px;max-width:52ch">Zavolejte nebo napište. Pošleme vám i půdorys podkroví, projekt přestavby a přehled možností pronájmu.</p>
+        <p class="who">Mgr. Jakub Krejza<span>realitní specialista · Gepard Reality</span></p>
+      </div>
+      <div class="acts">
+        <a class="btn btn-p" href="tel:+420603260592">Zavolat +420 603 260 592</a>
+        <a class="btn btn-o" href="mailto:jakub.krejza@gpre.cz?subject=D%C5%AFm%20Star%C3%A9%20Splavy%20%E2%80%93%20prohl%C3%ADdka">Napsat e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Gepard Reality</b> · Absoluta Real s.r.o. · Vršovické náměstí 67/8, Praha 10</div>
+    <div>Dům u Máchova jezera · Staré Splavy · <button type="button" class="pl" data-privacy>Soukromí a cookies</button></div>
+  </div>
+</footer>
+
+<a class="btn btn-p mcta" href="#kontakt">Domluvit prohlídku</a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Fotka"><button class="x" aria-label="Zavřít">×</button><button class="p" aria-label="Předchozí">‹</button><img alt=""><button class="n" aria-label="Další">›</button></div>
+
+<script>
+const top_=document.getElementById('top');
+const onS=()=>top_.classList.toggle('solid',scrollY>40); onS(); addEventListener('scroll',onS,{passive:true});
+document.querySelectorAll('.ba').forEach(b=>{const i=b.querySelector('input');const f=()=>b.style.setProperty('--x',i.value+'%');i.addEventListener('input',f);f();});
+const links=[...document.querySelectorAll('#gal a')], lb=document.getElementById('lb'), li=lb.querySelector('img'); let k=0;
+const show=n=>{k=(n+links.length)%links.length;li.src=links[k].href;li.alt=links[k].dataset.cap||'';lb.classList.add('on');};
+links.forEach((a,n)=>a.addEventListener('click',e=>{e.preventDefault();show(n);}));
+lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
+lb.querySelector('.p').onclick=()=>show(k-1); lb.querySelector('.n').onclick=()=>show(k+1);
+lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('on');});
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')show(k-1);if(e.key==='ArrowRight')show(k+1);});
+</script>
+
+<section id="mb" class="mb" aria-label="Souhlas s měřením reklam" hidden><p><strong>Měření reklam.</strong> Se souhlasem měříme, kolik lidí přišlo z reklamy Google a kliklo na telefon nebo e-mail makléře. Volbu můžete kdykoli změnit.</p><div class="ma"><button type="button" data-consent="reject">Nepovolit</button><button type="button" data-consent="all">Povolit</button><button type="button" data-privacy>Nastavit</button></div></section>
+<dialog id="pd" class="pd" aria-labelledby="pd-t"><header><h2 id="pd-t">Soukromí a cookies</h2><button type="button" data-privacy-close aria-label="Zavřít nastavení soukromí">Zavřít ×</button></header><p>Vyberte, zda nám umožníte měřit, kolik lidí přišlo z reklamy. Odmítnutí neomezuje prohlížení stránky ani kontaktování makléře.</p><label class="pc"><input id="consent-ads" type="checkbox"><span><strong>Měření reklam</strong><small>Značka Google Ads zaznamená příchod z reklamy a kliknutí na telefon nebo e-mail makléře. Jméno ani kontaktní údaje do měření neposíláme. Personalizované reklamy a remarketing tímto souhlasem nezapínáme.</small></span></label><div class="ma"><button type="button" data-consent="reject">Odmítnout</button><button type="button" data-consent="save">Uložit výběr</button><button type="button" data-consent="all">Povolit</button></div><h3>Jak nakládáme s údaji</h3><p>Volbu ukládáme v tomto prohlížeči na 180 dní. Měřicí značku Google načteme až po souhlasu. Používá cookies <code>_gcl_*</code> s identifikátorem kliknutí na reklamu. Souhlas lze kdykoli změnit odkazem „Soukromí a cookies“ v patičce.</p><p>Povolené měření zpracovává Google Ireland Limited, viz <a href="https://policies.google.com/privacy?hl=cs" target="_blank" rel="noopener noreferrer">zásady ochrany soukromí Google</a>. Data mohou být zpracována i mimo Evropský hospodářský prostor.</p><p>Kliknutí na telefon nebo e-mail není potvrzením uskutečněného hovoru ani odeslané zprávy.</p><p>Dotazy k nabídce a soukromí: Mgr. Jakub Krejza · Gepard Reality / Absoluta Real s.r.o. · <a href="mailto:jakub.krejza@gpre.cz">jakub.krejza@gpre.cz</a>.</p></dialog>
+<script>
+/* Staré Splavy: měření Google Ads až po souhlasu (vzor pozemekpitkovice.cz/measurement.js, bez GA4). */
+(()=>{'use strict';
+const TAG='AW-668337477', CONV='AW-668337477/3hptCPqQlMAdEMWK2L4C', KEY='splavy-consent-v1', LIFE=180*864e5;
+const live=location.hostname==='frantisekdron.github.io';
+const mb=document.getElementById('mb'), pd=document.getElementById('pd'), box=document.getElementById('consent-ads');
+let c={ads:false}, saved=false, loaded=false, last=0;
+try{const v=JSON.parse(localStorage.getItem(KEY)); if(v&&v.version===1&&typeof v.ads==='boolean'&&Number.isFinite(v.at)&&Date.now()-v.at<LIFE){c=v;saved=true;}}catch(_){}
+window.dataLayer=window.dataLayer||[]; window.gtag=window.gtag||function(){dataLayer.push(arguments);};
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+gtag('set','ads_data_redaction',true); gtag('set','url_passthrough',false);
+function clear(){for(const it of document.cookie.split(';')){const n=it.split('=')[0].trim(); if(!/^_gcl_/.test(n)||c.ads)continue; for(const d of ['',location.hostname])document.cookie=n+'=; Max-Age=0; path=/; SameSite=Lax'+(d?'; domain='+d:'');}}
+function apply(){
+  gtag('consent','update',{ad_storage:c.ads?'granted':'denied',ad_user_data:c.ads?'granted':'denied',ad_personalization:'denied'});
+  clear(); box.checked=c.ads; mb.hidden=saved;
+  if(!live||!c.ads||loaded)return; loaded=true;
+  gtag('js',new Date()); gtag('config',TAG,{allow_ad_personalization_signals:false});
+  const s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+TAG; s.onerror=()=>{loaded=false;s.remove();}; document.head.appendChild(s);
+}
+function save(a){c={version:1,ads:a,at:Date.now()};saved=true;try{localStorage.setItem(KEY,JSON.stringify(c));}catch(_){} apply(); if(pd.open)pd.close();}
+document.addEventListener('click',e=>{
+  if(!(e.target instanceof Element))return;
+  const b=e.target.closest('[data-consent],[data-privacy],[data-privacy-close]');
+  if(b){ if(b.hasAttribute('data-privacy')){box.checked=c.ads;pd.showModal();} else if(b.hasAttribute('data-privacy-close'))pd.close();
+         else save(b.dataset.consent==='all'?true:b.dataset.consent==='reject'?false:box.checked); return; }
+  const a=e.target.closest('a[href^="tel:"],a[href^="mailto:"]');
+  if(a&&!a.closest('#pd')&&live&&c.ads&&loaded&&Date.now()-last>1500){ last=Date.now();
+    gtag('event','conversion',{send_to:CONV,value:1.0,currency:'CZK',transport_type:'beacon'}); }
+},true);
+addEventListener('storage',e=>{if(e.key!==KEY)return;try{const v=JSON.parse(e.newValue);if(v&&v.version===1){c=v;saved=true;apply();}}catch(_){}});
+apply();
+})();
+</script>
+</body>
+</html>
